@@ -6,3 +6,9 @@
 # 100 -> 1 (1 + 0 + 0) |
 #------------------------------
 
+a = int(input("Введите любое 3-значное число: "))
+digit1 = a//100
+digit2 = round((a%100 - a%10)/10)
+digit3 = a%10
+summ = digit1 + digit2 + digit3
+print(f'{a} -> {summ} ({digit1} + {digit2} + {digit3})')
