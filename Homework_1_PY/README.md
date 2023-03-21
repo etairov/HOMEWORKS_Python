@@ -1,4 +1,4 @@
-# HOMEWORKS_Python
+# HOMEWORKS_Python.
 Знакомство с языком Python (семинары)
 
 Урок 1. Ввод-Вывод, операторы ветвления
