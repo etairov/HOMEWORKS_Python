@@ -3,3 +3,15 @@
 # Выведите минимальное количество монет, которые нужно перевернуть
 #-----------------------------------------------------------------
 
+from random import randint
+
+n_monet = int(input("Введите кол-во монет на столе: "))
+orel = randint(0, n_monet)
+reshka = n_monet - orel
+print()
+print(f"Монет на столе: {n_monet} / Орел: {orel} / Решка: {reshka}")
+
+if orel > reshka:
+    print(f"Перевернуть {reshka} монеты(у)")
+else:
+    print(f"Перевернуть {orel} монеты(у)")
