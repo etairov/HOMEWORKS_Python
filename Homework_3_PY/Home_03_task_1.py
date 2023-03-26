@@ -8,4 +8,14 @@
 # 1 2 3 4 5
 # 3-> 1
 #-----------------
+from random import randint
+N = int(input('Введите кол-во элементов массива N: '))
+A = [randint(0, N) for i in range(N)]
+print(A, end="\n")
+X = int(input('Введите X: '))
+count = 0
+for i in range(N):
+    if X == A[i]:
+        count += 1
+print(f'Искомое число {X} повторяется -> {count} раз(а)')
 
