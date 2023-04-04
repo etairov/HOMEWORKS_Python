@@ -3,5 +3,15 @@
 # Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во элементов второго множества.
 # Затем пользователь вводит сами элементы множеств.
 # --------------------------------------------------
+from random import randint
+
+n = 15
+list_1 = {randint(0, n) for i in range(n)}
+m = 15
+list_2 = {randint(0, m) for i in range(m)}
+print(list_1, end="\n")
+print(list_2, end="\n")
+double = list_1 & list_2
+print(double, end=" ")
 
 
