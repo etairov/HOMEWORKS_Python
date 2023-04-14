@@ -7,4 +7,11 @@
 # 4
 # ------------------------
 
-
+a = int(input("Введите первое неотрицительное число "))
+b = int(input("Введите второе неотрицательно число "))
+def recurs_func(a, b):
+    if a == 0:
+        return b
+    else:
+        return recurs_func(a - 1, b + 1)
+print(recurs_func(a, b))
